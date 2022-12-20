@@ -21,13 +21,16 @@ SET time_zone = "+00:00";
 -- Database: `sigt2`
 --
 
+CREATE DATABASE IF NOT EXISTS `sigt2`;
+USE `sigt2`;
+
 -- --------------------------------------------------------
 
 --
 -- Struktur dari tabel `kosts`
 --
 
-CREATE TABLE `kosts` (
+CREATE TABLE IF NOT EXISTS `kosts` (
   `id` smallint(6) NOT NULL,
   `nama` varchar(150) NOT NULL,
   `alamat` varchar(255) NOT NULL,
@@ -64,7 +67,7 @@ INSERT INTO `kosts` (`id`, `nama`, `alamat`, `latitude`, `longitude`, `tersedia`
 -- Struktur dari tabel `users`
 --
 
-CREATE TABLE `users` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(6) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
