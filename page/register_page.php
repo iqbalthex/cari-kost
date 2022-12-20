@@ -58,9 +58,9 @@ if(isset($_POST['register'])){
       </div>
       <label class="form-label mt-2">Daftar sebagai</label>
       <div class="justify-content-center my-1">
-        <input type="radio" class="btn-check" name="status" id="admin" />
+        <input type="radio" class="btn-check" name="status" value="admin" id="admin" />
         <label class="btn btn-outline-secondary" for="admin">Admin</label>
-        <input type="radio" class="btn-check" name="status" id="guest" checked />
+        <input type="radio" class="btn-check" name="status" value="guest" id="guest" checked />
         <label class="btn btn-outline-secondary" for="guest">Guest</label>
       </div>
       <button type="submit" name="register" class="btn btn-primary my-2">Daftar</button>
